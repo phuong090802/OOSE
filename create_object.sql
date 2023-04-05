@@ -45,7 +45,7 @@ create table lightnovels(
     light_novel_name varchar(50) not null,
     genre_id int not null,
     user_id int,
-	constraint PK_LIGHT_NOVEL_GENRE primary key (light_novel_id,  genre_id),
+	constraint PK_LIGHT_NOVEL primary key (light_novel_id),
     constraint FK_LIGHT_NOVEL_GENRE foreign key (genre_id) references genres(genre_id),
     constraint FK_LIGHT_NOVEL_USER foreign key (user_id) references users(user_id)
 );
