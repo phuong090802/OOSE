@@ -52,12 +52,24 @@
         app:drawableStartCompat="@drawable/md_logout"
         tools:ignore="VisualLintOverlap" />
 
+    <TextView
+        android:id="@+id/text_view_change_password"
+        android:layout_width="@dimen/custom_width_text_input_layout_login"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:text="@string/change_your_password"
+        android:textColor="@color/md_theme_dark_shadow"
+        app:drawableStartCompat="@drawable/md_password"
+        tools:ignore="VisualLintOverlap" />
+
     <androidx.constraintlayout.helper.widget.Flow
         android:id="@+id/flow_settings_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:constraint_referenced_ids="switch_dark_mode_2,text_view_to_edit_info,text_view_to_log_out"
+        app:constraint_referenced_ids="switch_dark_mode_2,text_view_to_edit_info,text_view_to_log_out,text_view_change_password"
         app:flow_verticalGap="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

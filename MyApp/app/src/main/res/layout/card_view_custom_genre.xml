@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/custom_width_text_view_genre"
+    android:id="@+id/card_view_genre"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/text_view_genre_name"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:text="@string/example"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.cardview.widget.CardView>
