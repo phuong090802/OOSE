@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="custom_width_text_input_layout_login">350dp</dimen>
+    <dimen name="custom_width_text_input_layout_signup">170dp</dimen>
+</resources>

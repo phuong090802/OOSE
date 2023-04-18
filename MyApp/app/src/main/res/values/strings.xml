@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Magic book</string>
+    <string name="password">Mật khẩu</string>
+    <string name="username_email_or_mobile_phone">Tên người dùng, email/số di động</string>
+    <string name="log_in">Đăng nhập</string>
+    <string name="forget_password">Quên mật khẩu ư?</string>
+    <string name="create_new_account">Tạo tài khoản mới</string>
+    <string name="magic_book">Magic book</string>
+    <string name="firstname">Tên</string>
+    <string name="surname">Họ</string>
+    <string name="username">Username</string>
+    <string name="confirm_password">Nhập lại mật khẩu</string>
+    <string name="date_of_birth_dd_mm_yyyy">Ngày sinh (dd/mm/yyyy)</string>
+    <string name="mobile_number">Số điện thoại</string>
+    <string name="email_address">Địa chỉ email</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="find_your_account">Tìm tài khoản</string>
+    <string name="info_forget">Nhập tên người dùng, email hoặc số di động của bạn.</string>
+    <string name="change_your_password">Đổi mật khẩu</string>
+    <string name="enter_your_code">Nhập mã xác thực</string>
+    <string name="info_conform_account">Chúng tôi sẽ gửi cho bạn mã đến địa chỉ email của bạn</string>
+    <string name="your_email">v**@*******</string>
+    <string name="info_your_email">Chúng tôi sẽ gửi mã xác thực đến:</string>
+    <string name="example">Ví dụ</string>
+    <string name="not_you">Không phải bạn</string>
+    <string name="login_with_password">Đăng nhập với mật khẩu</string>
+    <string name="next">Tiếp tục</string>
+    <string name="home">Trang chủ</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="bookshelf">Kệ sách</string>
+    <string name="settings">Cài đặt</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="update">Cập nhật</string>
+    <string name="genre">Danh mục</string>
+    <string name="enough_content">Truyện đủ nội dung</string>
+    <string name="composed">Truyện sáng tác</string>
+    <string name="your">Truyện của bạn</string>
+    <string name="search_data">Nhập tên truyện, tác giả</string>
+    <string name="dark_mode">Giao diện ban đêm</string>
+    <string name="log_out">Đăng xuất</string>
+    <string name="edit_info">Chỉnh sửa thông tin</string>
+    <string name="manage_account">Quản lý tài khoản</string>
+    <string name="manage_genre">Quản lý danh mục</string>
+    <string name="search_account">Nhập tên tài khoản, email, số diện thoại</string>
+    <string name="search_genre">Nhập tên thể loại</string>
+</resources>
