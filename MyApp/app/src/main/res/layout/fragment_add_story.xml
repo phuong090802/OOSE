@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.AddStoryFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_view_home"
+            android:layout_width="@dimen/custom_width_text_input_layout_login"
+            android:layout_height="wrap_content"
+            android:text="@string/add_story"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shape_able_image_view"
+            android:layout_width="@dimen/custom_size_image_user_settings"
+            android:layout_height="@dimen/custom_size_image_user_settings"
+            app:shapeAppearanceOverlay="@style/circle_image_view"
+            tools:ignore="ImageContrastCheck" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_story_name"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="@dimen/custom_width_text_input_layout_login"
+            android:layout_height="wrap_content"
+            android:background="@color/md_theme_light_onPrimary"
+            android:hint="@string/story_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_edit_text_story_name"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColorHint="@color/md_theme_light_outlineVariant" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_author"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="@dimen/custom_width_text_input_layout_login"
+            android:layout_height="wrap_content"
+            android:background="@color/md_theme_light_onPrimary"
+            android:hint="@string/author">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_edit_text_author"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColorHint="@color/md_theme_light_outlineVariant" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spinner_genre"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:layout_width="@dimen/custom_width_text_input_layout_login"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_optional"
+            android:layout_width="@dimen/custom_width_text_input_layout_login"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:paddingHorizontal="16dp"
+            android:text="@string/optional"
+            tools:ignore="VisualLintButtonSize,VisualLintOverlap" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_content"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="@dimen/custom_width_text_input_layout_login"
+            android:layout_height="wrap_content"
+            android:background="@color/md_theme_light_onPrimary"
+            android:hint="@string/content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_edit_text_content"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:maxLines="2147483647"
+                android:scrollHorizontally="false"
+                android:textColorHint="@color/md_theme_light_outlineVariant" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/button_new_chapter"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_chapter"
+            tools:ignore="VisualLintButtonSize,VisualLintOverlap" />
+
+
+        <Button
+            android:id="@+id/button_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/publish"
+            tools:ignore="VisualLintButtonSize,VisualLintOverlap" />
+
+        <Button
+            android:id="@+id/button_upload_image"
+            style="@style/Widget.Material3.Button.TextButton.Dialog.Flush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_image_story"
+            tools:ignore="VisualLintOverlap" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/flow_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:constraint_referenced_ids="text_input_layout_story_name,text_input_layout_author,spinner_genre,switch_optional,text_input_layout_content,button_new_chapter,shape_able_image_view,button_upload_image,button_publish"
+            app:flow_verticalGap="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_view_home"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

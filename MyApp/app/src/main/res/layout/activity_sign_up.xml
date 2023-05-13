@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivity">
+    tools:context=".activity.SignUpActivity">
 
     <TextView
         android:textStyle="bold"
@@ -28,6 +28,7 @@
         android:hint="@string/firstname">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_edit_text_first_name"
             style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -45,6 +46,7 @@
         android:hint="@string/surname">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_edit_text_last_name"
             style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -82,11 +84,13 @@
         android:hint="@string/username">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_edit_text_username_sign_in"
             style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:textColorHint="@color/md_theme_light_outlineVariant" />
+            android:textColorHint="@color/md_theme_light_outlineVariant"
+            tools:ignore="TouchTargetSizeCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -99,6 +103,7 @@
         app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_edit_text_password_sign_in"
             style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -116,6 +121,7 @@
         app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_edit_text_confirm_password_sign_in"
             style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -133,6 +139,7 @@
         android:hint="@string/date_of_birth_dd_mm_yyyy">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_edit_text_date_of_birth"
             style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -149,6 +156,7 @@
         android:hint="@string/mobile_number">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_edit_text_phone"
             style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -166,6 +174,7 @@
         android:hint="@string/email_address">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_edit_email"
             style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

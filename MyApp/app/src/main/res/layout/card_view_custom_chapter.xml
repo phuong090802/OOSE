@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view_chapter"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/custom_height_text_view_chapter">
+
+    <TextView
+        android:id="@+id/text_view_chapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="10dp"
+        android:padding="10dp"
+        android:text="@string/example"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</com.google.android.material.card.MaterialCardView>

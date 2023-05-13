@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view_genre"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/custom_shape_able_image_view"
+    tools:ignore="TextSizeCheck">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shape_able_image_view_item"
+            android:layout_width="@dimen/custom_shape_able_image_view"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo_app" />
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_story_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="5dp"
+                android:text="@string/example"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="VisualLintOverlap" />
+
+            <TextView
+                android:id="@+id/text_view_genre_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:text="@string/example"
+                android:textSize="18sp"
+                tools:ignore="VisualLintOverlap" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".application.MyApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,27 +16,43 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
-            android:name=".AppActivity"
+            android:name=".activity.ChangeInfoActivity"
             android:exported="false" />
         <activity
-            android:name=".ForgotPassword1Activity"
+            android:name=".activity.ChangePasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".ForgotPassword2Activity"
-            android:exported="false" />
+            android:name=".activity.LoadingActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ForgotPassword3Activity"
-            android:exported="false" />
+            android:name=".activity.ManageActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".SignUpActivity"
-            android:exported="false" />
+            android:name=".activity.ForgotPassword1Activity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".SignInActivity"
-            android:exported="false" />
+            android:name=".activity.ForgotPassword2Activity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
         <activity
-            android:windowSoftInputMode="adjustPan"
-            android:name=".ManageActivity"
-            android:exported="true">
+            android:name=".activity.ForgotPassword3Activity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.SignInActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.AppActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignInActivity">
+    tools:context=".activity.SignInActivity">
 
     <TextView
         android:id="@+id/text_view_logo_banner"
@@ -13,11 +13,23 @@
         android:text="@string/log_in"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/flow_login"
+        app:layout_constraintBottom_toTopOf="@id/progress_bar_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:visibility="invisible"
+        android:id="@+id/progress_bar_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:layout_constraintBottom_toTopOf="@id/flow_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_logo_banner" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/text_input_layout_username"
@@ -28,6 +40,7 @@
         android:hint="@string/username_email_or_mobile_phone">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_edit_text_username"
             style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,12 +59,23 @@
         app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_edit_text_password"
             style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:textColorHint="@color/md_theme_light_outlineVariant" />
     </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/text_view_login_fail"
+        android:layout_width="@dimen/custom_width_text_input_layout_login"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/md_color_error"
+        android:visibility="gone"
+        tools:ignore="VisualLintOverlap" />
 
     <Button
         android:id="@+id/button_login"
@@ -82,7 +106,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:constraint_referenced_ids="text_input_layout_username,text_input_layout_password,button_login,button_forgot_password,button_create_new_account"
+        app:constraint_referenced_ids="text_input_layout_username,,text_input_layout_password,text_view_login_fail,button_login,button_forgot_password,button_create_new_account"
         app:flow_verticalGap="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Settings3Fragment">
+
+    <TextView
+        android:id="@+id/text_view_settings"
+        android:layout_width="@dimen/custom_width_text_input_layout_login"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_view_user_settings"
+        android:layout_width="@dimen/custom_size_image_user_settings"
+        android:layout_height="@dimen/custom_size_image_user_settings"
+        android:src="@drawable/user"
+        app:shapeAppearanceOverlay="@style/circle_image_view"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/text_view_name_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/custom_width_text_input_layout_login"
+        android:text="@string/example"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="VisualLintOverlap" />
+
+    <TextView
+        android:id="@+id/text_view_to_edit_info"
+        android:layout_width="@dimen/custom_width_text_input_layout_login"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:text="@string/edit_info"
+        android:textColor="@color/md_theme_dark_shadow"
+        app:drawableStartCompat="@drawable/md_settings"
+        tools:ignore="VisualLintOverlap" />
+
+
+    <TextView
+        android:id="@+id/text_view_change_password"
+        android:layout_width="@dimen/custom_width_text_input_layout_login"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:text="@string/change_your_password"
+        android:textColor="@color/md_theme_dark_shadow"
+        app:drawableStartCompat="@drawable/md_password"
+        tools:ignore="VisualLintOverlap" />
+
+    <TextView
+        android:id="@+id/text_view_compose"
+        android:layout_width="@dimen/custom_width_text_input_layout_login"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:text="@string/compose"
+        android:textColor="@color/md_theme_dark_shadow"
+        app:drawableStartCompat="@drawable/md_edit"
+        tools:ignore="VisualLintOverlap" />
+
+    <TextView
+        android:id="@+id/text_view_notification"
+        android:layout_width="@dimen/custom_width_text_input_layout_login"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:text="@string/notification"
+        android:textColor="@color/md_theme_dark_shadow"
+        app:drawableStartCompat="@drawable/md_notification"
+        tools:ignore="VisualLintOverlap" />
+
+
+    <TextView
+        android:id="@+id/text_view_to_log_out"
+        android:layout_width="@dimen/custom_width_text_input_layout_login"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:text="@string/log_out"
+        android:textColor="@color/md_theme_dark_shadow"
+        app:drawableStartCompat="@drawable/md_logout"
+        tools:ignore="VisualLintOverlap" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow_settings_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:constraint_referenced_ids="image_view_user_settings,text_view_name_settings,text_view_to_edit_info,text_view_change_password,text_view_compose,text_view_notification,text_view_to_log_out"
+        app:flow_verticalGap="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_settings"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

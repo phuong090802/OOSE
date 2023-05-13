@@ -10,16 +10,15 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.ute.myapp.R;
-import com.ute.myapp.model.Genre;
 
 import java.util.List;
 
 public class GenreAdapter extends RecyclerView.Adapter<GenreAdapter.ViewHolder> {
-    private final List<Genre> genreList;
+    private final List<String> stringList;
     private final Context context;
 
-    public GenreAdapter(Context context, List<Genre> genreList) {
-        this.genreList = genreList;
+    public GenreAdapter(Context context, List<String> stringList) {
+        this.stringList = stringList;
         this.context = context;
     }
 
@@ -32,20 +31,20 @@ public class GenreAdapter extends RecyclerView.Adapter<GenreAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull GenreAdapter.ViewHolder holder, int position) {
-        Genre genre = genreList.get(position);
-        holder.textViewGenreName.setText(genre.getGenreName());
+        String genreName = stringList.get(position);
+        holder.textViewGenreItem.setText(genreName);
     }
 
     @Override
     public int getItemCount() {
-        return genreList == null ? 0 : genreList.size();
+        return stringList == null ? 0 : stringList.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        private final TextView textViewGenreName;
+        private final TextView textViewGenreItem;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            textViewGenreName = itemView.findViewById(R.id.text_view_genre_name);
+            textViewGenreItem = itemView.findViewById(R.id.text_view_genre_item);
         }
     }
 }

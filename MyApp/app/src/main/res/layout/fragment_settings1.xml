@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Settings1Fragment">
+    tools:context=".fragment.Settings1Fragment">
 
     <TextView
         android:id="@+id/text_view_settings"
@@ -18,16 +18,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.switchmaterial.SwitchMaterial
-        android:id="@+id/switch_dark_mode"
+    <TextView
+        android:paddingHorizontal="5dp"
+        android:id="@+id/text_view_to_register"
         android:layout_width="@dimen/custom_width_text_input_layout_login"
         android:layout_height="wrap_content"
-        android:drawableStart="@drawable/md_dark_mode"
         android:drawablePadding="10dp"
+        android:gravity="center_vertical"
         android:minHeight="48dp"
-        android:text="@string/dark_mode"
-        tools:ignore="VisualLintButtonSize,VisualLintOverlap" />
-
+        android:text="@string/register_account"
+        android:textColor="@color/md_theme_dark_shadow"
+        app:drawableStartCompat="@drawable/md_create_account"
+        tools:ignore="VisualLintOverlap" />
 
     <TextView
         android:id="@+id/text_view_to_login"
@@ -46,7 +48,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:constraint_referenced_ids="switch_dark_mode,text_view_to_login"
+        app:constraint_referenced_ids="text_view_to_register,text_view_to_login"
         app:flow_verticalGap="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

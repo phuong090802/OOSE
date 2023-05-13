@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GenreManageFragment">
-
+    tools:context=".fragment.GenreManageFragment">
 
     <TextView
         android:id="@+id/text_view_genre_manage"
@@ -20,8 +19,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.SearchView
-        android:layout_marginEnd="20dp"
-        android:id="@+id/search_view_genre"
+        app:layout_constraintBottom_toTopOf="@id/recycler_view_genre"
+        android:layout_marginVertical="10dp"
+        android:id="@+id/search_view_genre_manage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:iconifiedByDefault="false"
@@ -39,17 +39,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/search_view_genre" />
+        app:layout_constraintTop_toBottomOf="@id/search_view_genre_manage" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button_add_genre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginVertical="10dp"
         android:contentDescription="@string/search"
-        android:src="@drawable/md_search"
+        android:minHeight="48dp"
+        android:src="@drawable/md_add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.98"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
